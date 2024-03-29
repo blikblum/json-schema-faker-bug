@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://xxx.com.br/schemas/root",
+  "type": "object",
+  "properties": {
+    "dailyStats": {
+      "type": "array",
+      "minItems": 100,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "properties": {
+          "serologyStatus": {
+            "type": "object",
+            "patternProperties": {
+              "^(positive|negative)$": {
+                "type": "integer"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "required": [
+          "serologyStatus"
+        ]
+      }
+    }
+  },
+  "required": [
+    "dailyStats"
+  ]
+}

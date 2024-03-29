@@ -1,0 +1,23 @@
+{
+  "name": "json-schema-faker-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blikblum/json-schema-faker-bug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blikblum/json-schema-faker-bug/issues"
+  },
+  "homepage": "https://github.com/blikblum/json-schema-faker-bug#readme",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "json-schema-faker": "^0.5.6"
+  }
+}
